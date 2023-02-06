@@ -64,11 +64,12 @@ const onSubmit = (e) => {
   
 
   return (
-    <div>
+    <div className='mb-8'>
+      <h1 className='text-lg font-bold mt-4'>Using Axios</h1>
          <form onSubmit={onSubmit} className='mt-2'>
-                  <input type="text" placeholder='Email' value={email} name="email" id="email" onChange={onChange} className='block rounded-lg bg-[#f2d7f4] p-1 pl-2 w-80 mx-auto mb-2' />
-                  <input type="number" placeholder='amount' value={amount} name="amount" id="amount"  onChange={onChange} className='block rounded-lg bg-[#f2d7f4] p-1 pl-2 w-80 mx-auto mb-4'/>
-                  <button  className='bg-[#340438] text-white hover:bg-white border-2  border-[#340438] hover:text-[#340438] p-2 px-16 rounded-xl'>Pay</button>
+                  <input type="text" placeholder='Email' value={email} name="email" id="email" onChange={onChange} className='block rounded-lg bg-[#f2d7f4] p-1 pl-2 w-80 mb-2' />
+                  <input type="number" placeholder='amount' value={amount} name="amount" id="amount"  onChange={onChange} className='block rounded-lg bg-[#f2d7f4] p-1 pl-2 w-80 mb-4'/>
+                  <button  className='bg-blue-800 text-white hover:bg-white border-2  border-[#340438] hover:text-[#340438] p-2 px-16 rounded-xl'>Pay</button>
                </form>
     </div>
   )

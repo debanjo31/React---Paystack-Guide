@@ -17,8 +17,11 @@ function App() {
     </Router>
     </> */}
     <Navbar />
-    <PaystackApi />
+    <div className="w-5/6 mx-auto">   
+       <PaystackApi />
     <Paystackinline />
+    </div>
+
     </div>
   )
 }
