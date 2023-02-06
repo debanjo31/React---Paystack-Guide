@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import qs from 'qs';
 
+// Axios is to make a POST request to an API endpoint with a query string, then sets the response data to the state and displays it as a stringified JSON object.
+
 function PaystackApi() {
     
   const [formData, setFormData] = useState({
@@ -18,7 +20,7 @@ function PaystackApi() {
   
 var data = qs.stringify({
   'email': 'person@email.com',
-  'amount': '10247',
+  'amount': (amount*100).toString(),
   'currency': 'NGN',
   'callback_url': 'https://example.com/',
   'invoice_limit': '10',

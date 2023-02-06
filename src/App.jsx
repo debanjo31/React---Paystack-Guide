@@ -17,8 +17,8 @@ function App() {
     </Router>
     </> */}
     <Navbar />
-   <Paystackinline />
-   <PaystackApi />
+    <PaystackApi />
+    <Paystackinline />
     </div>
   )
 }
