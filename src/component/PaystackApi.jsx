@@ -1,11 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import qs from 'qs';
+import { cart } from './atom/cart';
+import { useRecoilState } from "recoil";
 
 // Axios is to make a POST request to an API endpoint with a query string, then sets the response data to the state and displays it as a stringified JSON object.
 
 function PaystackApi() {
-    
+
+   const [dark, setDark] = useRecoilState(cart)  
+   console.log(dark)
   const [formData, setFormData] = useState({
     email: '',
     amount: '',
